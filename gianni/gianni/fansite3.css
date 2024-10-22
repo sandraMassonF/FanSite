@@ -1,0 +1,12 @@
+.container{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+     height: 300px;
+     width: 1500px;
+     flex-direction: row;
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+    }
