@@ -3,12 +3,22 @@
     padding: 0;
 }
 
+/* POLICE */
 .concert-one-regular {
     font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
   
+/* FIN POLICE */
+
+/* NAVBAR */
 
 nav{
     display: flex;
@@ -59,11 +69,95 @@ nav a:hover{
 #lab{
     width: 30px ;
     height: 30px;
-    background:linear-gradient(rgb(0, 0, 0) 0%,rgb(0, 0, 0) 20%,transparent 21%, transparent 40%,rgb(0, 0, 0) 41%, rgb(0, 0, 0) 60%, transparent 61%, transparent 80%, rgb(0, 0, 0) 81%, rgb(0, 0, 0) 100% );
+    background:linear-gradient(rgb(2, 169, 246) 0%,rgb(2, 169, 246) 20%,transparent 21%, transparent 40%,rgb(2, 169, 246) 41%, rgb(2, 169, 246) 60%, transparent 61%, transparent 80%, rgb(2, 169, 246) 81%, rgb(2, 169, 246) 100% );
+    border-radius: 5px;
     margin: 4px;
     display: block;
     display: none;
 }
+
+/* FIN NAVBAR */
+
+.main{
+    font-family: "Prompt", sans-serif;
+    
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(/images/skyrim3.webp);
+    width: 100%;
+    height: 112vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+
+.banner h1{
+    display: inline;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    padding-top: 2%;
+    font-size:xx-large;
+}
+
+.box{
+    width: 30%;
+    padding-top: -10rem;
+}
+
+.box h3{
+    padding: 0 0 4% 4%;
+}
+
+.txtdescription{
+    padding: 2%;    
+    text-align: justify;
+}
+
+.evnmt:hover, .description:hover{
+    border-radius: 25px;
+    box-shadow: 0px 10px 22px 15px rgba(227, 227, 227, 0.1);
+}
+
+.event{
+    padding:5% ;
+    overflow-y: scroll;
+    scrollbar-color: #0d5fda rgb(64, 61, 61);
+    scrollbar-width: thin; 
+    height: 40rem; 
+      
+}
+
+.evnmt{
+    padding: 4%;
+}
+
+.event p{
+    text-align: justify;
+}
+
+.event a{
+    color: aliceblue;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media all and (max-width:767px){
     
@@ -86,12 +180,12 @@ nav a:hover{
     nav a {
         flex-direction: column;
         width: auto;
-        color: black;
+        color: rgb(250, 249, 249);
+        background-color: black;
+        border-bottom: #0dc9da38 1px solid;
     }
 
-    nav a:hover {
-        background-color: rgba(28, 49, 49, 0.147);
-    }
+ 
     
     #ch:checked+nav{
         transform: translate(0,0);
