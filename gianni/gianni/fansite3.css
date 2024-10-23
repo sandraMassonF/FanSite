@@ -17,9 +17,12 @@
     }
 .container1{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     height: 800px;
     width: 1500px;
     background-color: brown;
     flex-direction:row;
+}
+.centre{
+    text-align: center;
 }
