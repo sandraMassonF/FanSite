@@ -20,14 +20,14 @@
         <nav>            
             <a href="/index.html"><div class="logo"></div></a>
             <a href="#actualites">Actualités</a>
-            <a href="#evenements">Evènements</a>
-            <a href="#images">L'univers</a>
-            <a href="#communauté">Communauté</a>
+            <a href="#univers">L'univers</a>
+            <a href="#communaute">Communauté</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-    <main class="main">
-        <section class="banner">
+    <main class="main" id="actualites">
+        <section class="banner" >
             <h1>The Elder Scrolls V : Skyrim</h1>
             <article class="box description">
                 <p class="txtdescription">The Elder Scrolls V: Skyrim est un jeu vidéo de rôle et d'action développé par Bethesda Game Studios et édité par Bethesda Softworks, sorti le 11 novembre 2011 sur PlayStation 3, Xbox 360 et Microsoft Windows. C'est le cinquième opus de la série de jeux The Elder Scrolls, après Arena, Daggerfall, Morrowind et Oblivion.<br><br>
@@ -53,57 +53,113 @@
             </article>                
         </section>
 
-        <section class="univers">
-        <div class="slider-container">
-            <div class="menu">
-                <label for="slide-dot-1"></label>
-                <label for="slide-dot-2"></label>
-                <label for="slide-dot-3"></label>
-                <label for="slide-dot-4"></label>
-                <label for="slide-dot-5"></label>
-                <label for="slide-dot-6"></label>
-                <label for="slide-dot-7"></label>
-                <label for="slide-dot-8"></label>
-                <label for="slide-dot-9"></label>
-                <label for="slide-dot-10"></label>
-            </div>
+        <h2 class="titre-section">L'univers</h2>
+        <section class="univers" id="univers">
+            <article class="bank-img">
+                <div class="img altmer">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Altmer" target="_blank"><h4>Altmer</h4>
+                    </a>
+                </div>
+                <div class="img argonien">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Argonien" target="_blank"><h4>Argonien</h4>
+                    </a>
+                </div>
+                <div class="img bosmer">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Bosmer" target="_blank">
+                    <h4>Bosmer</h4>
+                    </a>
+                </div>
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Br%C3%A9ton"><div class="img breton">
+                    <h4>Breton</h4>
+                    </a>
+                </div>
+                <div class="img dunmer">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Dunmer"><h4>Dunmer</h4>
+                    </a>
+                </div>
+                <div class="img imperial">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Imp%C3%A9rial"><h4>Impérial</h4>
+                    </a>
+                </div>
+                <div class="img khajiit">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Khajiit"><h4>Khajiit</h4>
+                    </a>
+                </div>
+                <div class="img nordique">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Nordique"><h4>Nordique</h4>
+                    </a>
+                </div>
+                <div class="img orque">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Orsimer"><h4>Orque</h4>
+                    </a>
+                </div>
+                <div class="img rougegarde">
+                    <a href="https://elderscrolls.fandom.com/fr/wiki/Rougegarde"><h4>Rougegarde</h4>
+                    </a>
+                </div>
 
-            <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
-            <img class="slide-img" src="/sandra/images sandra/fond1.webp">
+            </article>
+            <article class="carrousel">
+                <div class="slider-container">
+                    <div class="menu">
+                        <label for="slide-dot-1"></label>
+                        <label for="slide-dot-2"></label>
+                        <label for="slide-dot-3"></label>
+                        <label for="slide-dot-4"></label>
+                        <label for="slide-dot-5"></label>
+                        <label for="slide-dot-6"></label>
+                        <label for="slide-dot-7"></label>
+                        <label for="slide-dot-8"></label>
+                        <label for="slide-dot-9"></label>
+                        <label for="slide-dot-10"></label>
+                    </div>
 
-            <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond10.jpg">
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="/sandra/images_sandra/fond1.webp" alt="image1">
 
-            <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond11.jpg">
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond10.jpg" alt="image2">
 
-            <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra//fond12.webp">
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond11.jpg" alt="image3">
 
-            <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond2.jpg">
+                    <input class="slide-input" id="slide-dot-4" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra//fond12.webp" alt="image4">
 
-            <input class="slide-input" id="slide-dot-6" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond3.jpg">
+                    <input class="slide-input" id="slide-dot-5" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond2.jpg" alt="image5">
 
-            <input class="slide-input" id="slide-dot-7" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond5.jpg">
+                    <input class="slide-input" id="slide-dot-6" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond3.jpg" alt="image6">
 
-            <input class="slide-input" id="slide-dot-8" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond7.jpg">
+                    <input class="slide-input" id="slide-dot-7" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond5.jpg" alt="image7">
 
-            <input class="slide-input" id="slide-dot-9" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond9.jpg">
+                    <input class="slide-input" id="slide-dot-8" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond7.jpg" alt="image8">
 
-            <input class="slide-input" id="slide-dot-10" type="radio" name="slides">
-            <img class="slide-img" src="/sandra/images sandra/fond8.jpg">
-        </div>
-    </body>
-</html>
+                    <input class="slide-input" id="slide-dot-9" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond9.jpg" alt="image9">
 
+                    <input class="slide-input" id="slide-dot-10" type="radio" name="slides">
+                    <img class="slide-img" src="/sandra/images_sandra/fond8.jpg" alt="image10">
+                </div>
+            </article>
+        </section>
+
+        <h2 class="titre-section">Communauté</h2>
+        <section class="communauté">
+            
+            <article class="liens">
+
+            </article>
+
+            <article class="chaines">
+
+            </article>
 
         </section>
-        </main>
+    </main>
 
         <footer class="footer">
             <div class="reseaux">
