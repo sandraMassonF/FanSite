@@ -331,6 +331,21 @@ font-weight: lighter;
 
 /*FIN UNIVERS */
 
+/*COMMUNAUTE*/
+.communauté{
+    width: 90%;
+    display: flex;
+}
+
+.liens{
+    width: 50%;
+    border: black 1px solid;
+}
+
+.chaines{
+    width: 50%;
+    border: black 1px solid;
+}
 
 /*FOOTER*/
 .footer{
