@@ -14,6 +14,11 @@
     font-family: "Prompt", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.prompt-light {
+    font-family: "Prompt", serif;
+    font-weight: 300;
+    font-style: normal;
   }
   
 /* FIN POLICE */
@@ -80,8 +85,11 @@ nav a:hover{
 
 .main{
     font-family: "Prompt", sans-serif;
+    background-color: rgb(0, 0, 0);
     
 }
+
+/*BANNER */
 
 .banner{
     display: flex;
@@ -89,7 +97,7 @@ nav a:hover{
     justify-content: space-around;
     background-image: url(/images/skyrim3.webp);
     width: 100%;
-    height: 112vh;
+    max-height: 112vh;
     background-size: cover;
     background-repeat: no-repeat;
     color: aliceblue;
@@ -102,19 +110,25 @@ nav a:hover{
     text-align: center;
     padding-top: 2%;
     font-size:xx-large;
+    margin-bottom: 3%;
 }
 
 .box{
-    width: 30%;
-    padding-top: -10rem;
+    max-width: 30%;    
+}
+
+.description{
+    height: 45rem; 
 }
 
 .box h3{
     padding: 0 0 4% 4%;
+   
+  
 }
 
 .txtdescription{
-    padding: 2%;    
+    padding: 8%;    
     text-align: justify;
 }
 
@@ -126,7 +140,7 @@ nav a:hover{
 .event{
     padding:5% ;
     overflow-y: scroll;
-    scrollbar-color: #0d5fda rgb(64, 61, 61);
+    scrollbar-color: #0c64e8 rgb(64, 61, 61);
     scrollbar-width: thin; 
     height: 40rem; 
       
@@ -136,22 +150,108 @@ nav a:hover{
     padding: 4%;
 }
 
+.evnmt h2{
+    color: #0668e8;
+    text-shadow: 1px -2px 11px rgba(0, 217, 255, 0.507);
+
+}
+
 .event p{
     text-align: justify;
 }
 
 .event a{
     color: aliceblue;
+    text-decoration: none;
+   
     
 }
 
+/*FIN BANNER */
+
+/*UNIVERS CARROUSEL*/
+
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+   margin-top: 
+   2%;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(251, 250, 250);
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background-color: #0668e8;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+    border-radius: 25px;
+ 
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
 
 
+/*FIN UNIVERS CARROUSEL*/
 
+/*FOOTER*/
+.footer{
+    background-color: black;    
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
 
+.reseaux{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: 5%;
+}
 
+.reseaux img:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
 
+.reseaux img{
+    width: 70%;
+}
 
+/*FIN FOOTER*/
 
 
 
