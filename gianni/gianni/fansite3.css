@@ -1,14 +1,14 @@
 .container{
     display:flex;
     justify-content: space-around;
+    flex-wrap: wrap;
      height: 50rem;
-     width: 93.75rem;
-     flex-direction: row;
+     margin:0 auto;
      
     }
     .item{
         width:18.75rem ;
-        height: 18.438rem;
+        height: 18.438rem; 
         background-color: cadetblue;
     }
     .item1 {
@@ -16,12 +16,12 @@
         height: 18.438rem;
         
     }
+
 .container1{
     display: flex;
     justify-content: space-around;
     height:50rem;
-    width: 93.75rem;
-    flex-direction:row;
+    flex-wrap: wrap;
 }
 .centre{
     text-align: center;
