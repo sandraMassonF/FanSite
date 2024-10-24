@@ -1,43 +1,202 @@
-body {
-    background-color: black;
-    color: #ffffff;
-}
+ body {
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+
+  }
 
 .bodi{
-    text-align: center;
-
+  text-align: center;
+     width:80% ;
+     margin: auto;
+     box-sizing: border-box; 
 }
 
-.sectp {
-
-    display: grid;
-    width: 60%;
-    text-align: center;
-    margin: auto;
-    background-color: blue
+.titre{
+padding:0rem 0rem 0rem 0rem;
+margin: 0rem 0rem 0rem 0rem;
+font-size: 17rem;
+background-color: aliceblue;
+font-weight: bold;
 }
+.sectp{
+  display:flex;
+  padding:0rem 0rem 0rem 0rem;
+  margin: 0rem 0rem 0rem 0rem;
+background-size:cover;
+background-image: url(image\ thomas/trckz.webp);
+align-items:end;
+justify-content:center;
+}
+.premiere-partie-texte{
+  height: 50rem;;
+  padding:0rem 0rem 0rem 0rem;
+  font-size: 6rem;
+}
+
+h5{
+margin: 5rem 0rem 0rem 0rem;
+font-size: 9rem;
+}
+
+/*  Defintion de la taille des sections */
+
+section{
+  height: 95rem;
+  padding:15rem 0rem 15rem 0rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*Bloque version A */
+
 .version-a{
-    display: grid;
-    width: 60%;
-    text-align: center;
-    margin: auto;
-    background-color: blue
+  display: flex;
+  background-color: rgb(255, 255, 255);
 }
+.image-va{
+  width:50%;
+}
+
+.texte-va{
+  text-align: start;
+  background-color: rgb(255, 255, 255);
+  width: 50%;
+  font-size: 5rem;
+  padding:7rem 0rem 7rem 2rem;
+  margin: 0rem 0rem 0rem 0rem;
+ }
+.image-va img{
+  height:100%;
+  width:100%
+}
+/*#image thomas/
+/* Bloque version B */
+
 .version-b{  
-    display: grid;
-    width: 60%;
-    text-align: center;
-    margin: auto;
-    background-color: rgb(255, 0, 0)
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  justify-content: end;
+}
+
+.image-vb{
+  width:50%
+}
+
+.image-vb img{
+  height:100%;
+  width:100%
+}
+
+.texte-vb{
+  background-color: rgb(255, 255, 255);
+  text-align: start;
+  width: 50%;
+  font-size: 5rem;
+  padding:7rem 0rem 7rem 2rem;
+  margin: 0rem 0rem 0rem 0rem;
+
+}
+h3,h2,h4{
+  font-weight:bold;
+  font-size:11rem;
+  text-align: start;
+}
+
+
   
-}
+
+
+
+
+
+
+
+
+
 .image-fin{
-    display: grid;
-    width: 60%;
-    text-align: center;
+  background-color: rgb(0, 255, 85);
+  padding:0rem 0rem 0rem 0rem;
+  }
+  
+  h4{
+    margin:0rem 0rem 0rem 0rem;
+    padding:2rem 0rem 2rem 0rem
+  }
+  
+  
+  
+  /*
+  .slider-container {
+    max-width: 60%;
+    position:static;
     margin: auto;
-    background-color: rgb(0, 255, 85)
+    height: 30%;
+    overflow: hidden;
+  }
+  .menu {
+    position: static;
+    left: 0;
+    z-index: 11;
+    width: 60%;
+    bottom: 0;
+    text-align: center;
+  }
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10%;
+    height: 10%;
+    background: #ccc;
+    border-radius: 15%px;
+    margin: 0 0.2em 1em;
+  }
+  .menu label:hover,.menu label:focus {
+    background: #1c87c9;
+  }
+  .slide-input{
+    opacity: 0;
+  }
+  .slide-img {
+    width: 20%;
+     height: 20%;
+    position:absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+  }
+  [id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+  }
+
+*/
+/*
+.premier {
+    background-color: #88c1d0;
+    width: 50%;
+    height: 50%;
+   
 }
+
+.deuxieme {
+    background-color:blueviolet;
+    height: 25%;
+  width: 25%;
+}
+
+.troisieme {
+    background-color:blue;
+    width: 25%;
+    height: 25%;
+  }
+
+.quatrieme {
+    background-color: #d08888;
+    width: 25%;
+    height: 25%;
+}
+*/
 
 
 
