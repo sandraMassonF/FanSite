@@ -4,6 +4,7 @@
     
 }
 
+
 /* POLICE */
 .concert-one-regular {
     font-family: "Concert One", sans-serif;
@@ -88,68 +89,104 @@ nav a:hover{
 
 /* FIN NAVBAR */
 
-.intro{
-    margin-top: 9rem;
-    height: 55vh;
-    text-align: center;
-    width: 100%;
-    background-color: #16171C;
-    color: aliceblue;
+/*CONTACTS*/
+body{
+    font-family: "Prompt";
+}
+
+.titre{
+    margin-top: 12rem;
     font-family: "Concert One";
-    
-}
-
-.intro img{
-    width: 53rem;
-}
-
-.intro h2{
-    padding-top: 1.5rem;
-    font-size: 2.5rem;
-    text-shadow: 1px -2px 11px #89f4feb6;
-}
-
-.section{    
-    display:flex ;
-    flex-wrap: wrap ;
-    justify-content: center;
-    font-family: "Prompt";  
-    text-align: justify;  
-}
-
-.card{
-   display: flex;
-   margin: 2rem;
-   padding: 4rem;
-   width: 80rem;
-   display:flex ;
-   border-radius: 25px;
-   box-shadow: 6px -8px 50px 0px rgba(52, 62, 65, 0.426);
-}
-
-.card:hover{
-    transform: scale(1.1);
-    transition: all 0.2s ease;
-}
-
-.img-card img{
-    width: 40rem;
-    height:40vh;
-    border-radius: 25px;
-    margin: 1rem;
-
-}
-
-.titreh2{
+    width: 100%;
     text-align: center;
-    padding-bottom: 1rem;
+    color: rgb(3, 3, 3);
+    font-size: 5rem;
+    font-weight: lighter;
+    text-shadow: 1px -2px 11px rgba(10, 140, 163, 0.488);  
+
+}
+.main{
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.text{
-    width: 50%;
-    padding: 2rem;
+
+/*FORMULAIRE*/
+
+form{
+    font-size: 1.2rem;
+}
+label{
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
 }
 
+input[type=text], textarea, input[type=email],input[type=adress],select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+  }
+
+  #submit {
+    color: rgb(251, 251, 251);
+    background-color: rgba(34,116,195,1);
+    border-radius: 10px;
+    border: rgba(14, 135, 95, 0.232) solid 1px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.263);
+    border: none;   
+    cursor: pointer;
+    padding: 1rem 2.3rem ;
+    font-size: 1.5rem;
+}
+
+#submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container {   
+    box-sizing : border-box;   
+    width: 40rem;
+    max-width: 60rem;
+    margin:10vh auto;
+    border: #e34ac915 solid 2px;   
+    border-radius: 25px;
+    box-shadow: 2px -1px 91px -14px rgba(9, 108, 121, 0.259);
+    padding: 2rem;  
+}
+
+#subject{    
+    height: 15vh;
+}
+
+#subscribe{
+    margin: 1.5rem 0;
+    cursor: pointer;
+   
+}
+
+
+/*FIN FORMULAIRE*/
+
+.img-logo{
+    width: 40rem;
+    border-radius: 100px;
+    box-shadow: 2px -1px 91px -14px rgba(9, 108, 121, 0.363);
+}
+
+
+/*FIN CONTACTS*/
 
 /*FOOTER*/
 .footer{
@@ -179,20 +216,7 @@ nav a:hover{
 
 /*FIN FOOTER*/
 
-
 /*RESPONSIVE*/
-
-@media all and (max-width:1420px) {
-
-    .card{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-    
-}
-
-
 
 @media all and (max-width:767px){
 
