@@ -95,6 +95,7 @@ nav a:hover{
     width: 100%;
     background-color: #16171C;
     color: aliceblue;
+    font-family: "Concert One";
     
 }
 
@@ -111,10 +112,12 @@ nav a:hover{
 .section{    
     display:flex ;
     flex-wrap: wrap ;
-    justify-content: center;    
+    justify-content: center;
+    font-family: "Prompt";    
 }
 
 .card{
+   display: flex;
    margin: 2rem;
    padding: 4rem;
    width: 80rem;
@@ -136,8 +139,14 @@ nav a:hover{
 
 }
 
+.titreh2{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
 .text{
     width: 50%;
+    padding: 2rem;
 }
 
 
@@ -170,6 +179,19 @@ nav a:hover{
 
 
 /*RESPONSIVE*/
+
+@media all and (max-width:1420px) {
+
+    .card{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+
+
 @media all and (max-width:767px){
 
     
