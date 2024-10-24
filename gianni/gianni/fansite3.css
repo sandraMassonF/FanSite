@@ -4,27 +4,37 @@
      height: 800px;
      width: 1500px;
      flex-direction: row;
-     background-color: blue;
+     
     }
     .item{
         width: 300px;
         height: 295px;
         background-color: cadetblue;
     }
-    .item1{
+    .item1 {
         width: 300px;
         height: 295px;
+        
     }
 .container1{
     display: flex;
     justify-content: space-around;
-    height: 800px;
+    height:800px;
     width: 1500px;
-    background-color: brown;
     flex-direction:row;
 }
 .centre{
     text-align: center;
+
+    
+}
+.centre2{
+    text-align: center;
+    
+}
+.centre1{
+    text-align: center;
+    
 }
 .event1{
 width: 100%;
@@ -67,7 +77,7 @@ img {
     background: #1c87c9;
 }
 .slide-input{
-    opacity: 0;
+    opacity: 0,5;
 }
 .slide-img {
     width: 100%;
@@ -82,4 +92,10 @@ img {
     left: 0;
     z-index: 100;
     transition: left 0.65s ease-out;
+}
+body{
+    background-color: black;
+}
+p,h1,h2,h3{
+    color: white;
 }
