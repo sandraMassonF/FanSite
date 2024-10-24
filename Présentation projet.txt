@@ -1,0 +1,31 @@
+Présentation 15min
+
+charte graphique
+
+sommaire clair et précis
+
+numérotation de slide
+
+séparations claire de chaque partie
+
+écrire gros et peu de mots
+
+
+sommaire exemple : 
+
+1 présentation du groupe
+
+2 Intro brève du projet
+
+3 Partie front-end:
+a conception wireframe maquette
+b développement : code, structure de projet
+c démo du projet
+
+3 conclusion
+
+
+Présenter GitHub
+Montrer organisation (trello)
+
+outil cardon pour rendre txt des Screenshot lisible

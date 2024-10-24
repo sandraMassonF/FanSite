@@ -1,0 +1,456 @@
+*{
+    margin: 0; 
+    padding: 0;
+    
+}
+
+
+/* POLICE */
+.concert-one-regular {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.prompt-light {
+    font-family: "Prompt", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* FIN POLICE */
+
+body{
+    background-color: black;
+}
+/* NAVBAR */
+
+nav{
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem;
+    height: 8rem;
+    background: rgb(34,116,195);
+    background: linear-gradient(0deg, rgba(34,116,195,1) 0%, rgba(0,5,5,1) 100%);
+    z-index: 1000;
+}
+
+
+nav a{
+    display: block;
+    text-align: center;
+    width: 400px;
+    height: 8rem;
+    padding-top: 25px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: "Concert One";
+}
+
+nav a:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.logo{
+    background-image: url("/images/logo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+    margin: -1.2rem;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 0.75rem rgb(212, 199, 201));    
+}
+
+#ch{
+    display: none;
+}
+
+#lab{
+    width: 30px ;
+    height: 30px;
+    background:linear-gradient(rgb(2, 169, 246) 0%,rgb(2, 169, 246) 20%,transparent 21%, transparent 40%,rgb(2, 169, 246) 41%, rgb(2, 169, 246) 60%, transparent 61%, transparent 80%, rgb(2, 169, 246) 81%, rgb(2, 169, 246) 100% );
+    border-radius: 5px;
+    margin: 4px;
+    display: block;
+    display: none;
+}
+
+/* FIN NAVBAR */
+
+.main{
+    font-family: "Prompt", sans-serif;
+    background-color: rgb(0, 0, 0);
+    
+}
+
+/*BANNER */
+
+.banner{
+    margin-top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-image: url(/images/skyrim3.webp);
+    height: 115vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;    
+    
+}
+
+.titreh1{
+    display: inline;
+    width: 100%;
+    height: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-size:xx-large;
+    margin-bottom: 3%;
+}
+
+.box{
+    width: 30rem;   
+     
+}
+
+.description{
+    height: 45rem; 
+}
+
+.box h3{
+    padding: 0 0 4% 4%;
+     
+}
+
+.txtdescription{
+    padding: 8%;    
+    text-align: justify;
+}
+
+.evnmt:hover, .description:hover{
+    border-radius: 25px;
+    box-shadow: 0px 10px 22px 15px rgba(227, 227, 227, 0.1);
+}
+
+.event{
+    padding:5% ;
+    overflow-y: scroll;
+    scrollbar-color: #0c64e8 rgb(64, 61, 61);
+    scrollbar-width: thin; 
+    height: 40rem; 
+      
+}
+
+.evnmt{
+    padding: 4%;
+}
+
+.evnmt h2{
+    color: #0668e8;
+    text-shadow: 1px -2px 11px rgba(0, 217, 255, 0.507);
+
+}
+
+.event p{
+    text-align: justify;
+}
+
+.event a{
+    color: aliceblue;
+    text-decoration: none;
+   
+    
+}
+
+/*FIN BANNER */
+
+/*UNIVERS*/
+
+.univers{
+    padding-top: 3%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.titre-section{
+    margin-top: 2%;
+    text-align: center;
+    color: #0668e8;
+    display: inline-block;
+    width: 100%;
+    border-bottom: #0691e839 solid 2px;
+}
+
+/* CARROUSEL*/
+
+.carrousel{
+    width: 40rem;
+}
+
+img {
+    max-width: 100%;
+}
+.slider-container {
+    
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    height: 25rem;
+    overflow: hidden;
+    margin-top: 
+   2%;
+}
+
+.img h4{
+    color: aliceblue;
+    font-weight: lighter;
+}
+
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(251, 250, 250);
+    border-radius: 50px;
+    margin: 0 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background-color: #0668e8;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+    border-radius: 25px;
+ 
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+
+/*FIN CARROUSEL*/
+
+/*IMAGES*/
+
+.bank-img{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.img{
+    margin: 0.5rem;
+    width: 20rem;
+    height: 16vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0px 10px 22px 15px rgba(11, 185, 238, 0.154);
+    border-radius: 24px;
+}
+.img:hover{
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+
+.img a{
+    text-decoration: none;
+}
+
+.img h4{
+    height: 100%;
+}
+
+.altmer{
+    background-image: url(/sandra/images_sandra/altmer.webp);   
+}
+
+.argonien{
+    background-image: url(/sandra/images_sandra/argonien.webp);
+}
+
+.bosmer{
+    background-image: url(/sandra/images_sandra/bosmer.webp );
+}
+
+.breton{
+    background-image: url(/sandra/images_sandra/breton.webp);
+}
+
+.dunmer{
+    background-image: url(/sandra/images_sandra/dunmer.webp);
+}
+
+.imperial{
+    background-image: url(/sandra/images_sandra/imperial.webp);
+}
+
+.khajiit{
+    background-image: url(/sandra/images_sandra/khajiit.webp);
+}
+
+.nordique{
+    background-image: url(/sandra/images_sandra/nordique.webp);
+}
+
+.orque{
+    background-image: url(/sandra/images_sandra/orques.webp);
+}
+
+.rougegarde{
+    background-image: url(/sandra/images_sandra/rougegarde.webp);
+}
+
+
+/*FIN UNIVERS */
+
+/*COMMUNAUTE*/
+.communauté{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+    
+}
+
+.box-commu{
+    border-radius: 25px;
+    box-shadow: 0px 10px 22px 15px rgba(227, 227, 227, 0.1);
+    padding: 4%;
+    width: 40%; 
+    /* border: rgb(251, 248, 248) 1px solid; */
+    line-height: 2.5rem;
+}
+
+.box-commu a{
+    color: aliceblue;
+    text-underline-offset: 6px;
+}
+
+
+.titre-liens{
+    color: #0668e8;
+}
+
+.liens h4{
+    color: #f4f5f6;
+}
+
+.img-commu{
+    padding-top: 10px;
+    padding-right: 1rem;
+}
+
+
+/*FOOTER*/
+.footer{
+    background-color: black;    
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.reseaux img:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
+
+.reseaux img{
+    width: 70%;
+}
+
+/*FIN FOOTER*/
+
+
+
+
+
+
+
+@media all and (max-width:767px){
+
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    header{
+        width: 100%;
+        height: 12rem;  
+        background: rgb(34,116,195);
+        background: linear-gradient(0deg, rgba(34,116,195,1) 0%, rgba(0,7,14,1) 34%, rgba(0,5,5,1) 100%);
+    }
+    
+    nav{
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    transform: translate(-1000px,0);
+    transition: all 0.5s ease;
+    }
+    
+    nav a {
+        flex-direction: column;
+        width: auto;
+        color: rgb(250, 249, 249);
+        background-color: black;
+        border-bottom: #0dc9da38 1px solid;
+    }
+
+ 
+    
+    #ch:checked+nav{
+        transform: translate(0,0);
+        transition: all 0.5s ease;
+    }
+
+    #lab{
+        display: block;
+    }
+}
