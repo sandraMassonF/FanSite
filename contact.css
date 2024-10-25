@@ -85,6 +85,7 @@ nav a:hover{
     margin: 4px;
     display: block;
     display: none;
+    
 }
 
 /* FIN NAVBAR */
@@ -92,6 +93,7 @@ nav a:hover{
 /*CONTACTS*/
 body{
     font-family: "Prompt";
+    
 }
 
 .titre{
@@ -118,6 +120,7 @@ body{
 
 form{
     font-size: 1.2rem;
+
 }
 label{
     margin-right: 0px;
@@ -172,8 +175,7 @@ input[type=text], textarea, input[type=email],input[type=adress],select {
 
 #subscribe{
     margin: 1.5rem 0;
-    cursor: pointer;
-   
+    cursor: pointer;   
 }
 
 
@@ -210,7 +212,8 @@ input[type=text], textarea, input[type=email],input[type=adress],select {
 }
 
 .reseaux img{
-    width: 70%;
+    width: 3rem;
+    margin:1rem;
     filter: invert(100%);
 }
 
@@ -218,7 +221,7 @@ input[type=text], textarea, input[type=email],input[type=adress],select {
 
 /*RESPONSIVE*/
 
-@media all and (max-width:767px){
+@media all and (max-width:768px){
 
     
     header{
@@ -255,4 +258,24 @@ input[type=text], textarea, input[type=email],input[type=adress],select {
     #lab{
         display: block;
     }
+}
+
+@media all and (max-width:425px){
+    .titre{
+        font-size: 3rem;
+    }
+
+    .img-logo{
+        width: 22rem;;
+    }
+
+    .container {     
+        width: 25rem;
+    }
+
+    #submit {        
+        padding: 0.8rem 2rem ;
+        font-size: 1rem;
+    }
+
 }
