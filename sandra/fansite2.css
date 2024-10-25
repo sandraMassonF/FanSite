@@ -1,6 +1,7 @@
 *{
     margin: 0; 
     padding: 0;
+    scroll-behavior: smooth;
     
 }
 
@@ -109,8 +110,8 @@ nav a:hover{
     height: 115vh;
     background-size: cover;
     background-repeat: no-repeat;
-    color: aliceblue;    
-    
+    background-position: center;
+    color: aliceblue;     
 }
 
 .titreh1{
@@ -207,8 +208,7 @@ nav a:hover{
 img {
     max-width: 100%;
 }
-.slider-container {
-    
+.slider-container {    
     max-width: 600px;
     position: relative;
     margin: auto;
@@ -269,9 +269,10 @@ img {
 /*IMAGES*/
 
 .bank-img{
-    width: 60%;
+    width: 102rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -407,12 +408,25 @@ img {
 /*FIN FOOTER*/
 
 
+@media all and (max-width:2560px){
+    .banner{
+    height:78rem ;
+   }
+    
+}
+
+@media all and (max-width:1440px){
+    .carrousel{
+        width: 80rem;
+    }
+    .img{
+        height: 18vh;        
+    }
+   
+}
 
 
-
-
-
-@media all and (max-width:767px){
+@media all and (max-width:768px){
 
     .main{
         display: flex;
@@ -427,12 +441,12 @@ img {
     }
     
     nav{
-    display: block;
-    position: absolute;
-    right: 0;
-    left: 0;
-    transform: translate(-1000px,0);
-    transition: all 0.5s ease;
+        display: block;
+        position: absolute;
+        right: 0;
+        left: 0;
+        transform: translate(-1000px,0);
+        transition: all 0.5s ease;
     }
     
     nav a {
@@ -444,7 +458,6 @@ img {
     }
 
  
-    
     #ch:checked+nav{
         transform: translate(0,0);
         transition: all 0.5s ease;
