@@ -20,7 +20,7 @@
 .container1{
     display: flex;
     justify-content: space-around;
-    height:50rem;
+    height:81rem;
     flex-wrap: wrap;
 }
 .centre{
