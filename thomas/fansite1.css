@@ -173,20 +173,31 @@ section{
   margin: 0rem 0rem 0rem 0rem;
 
 }
-h3,h2,h4{
+h3,h2{
   font-weight:bold;
   
   text-align: start;
 }
 
 .image-fin{
-  background-color: rgb(0, 255, 85);
+  background-color: rgb(255, 255, 255);
   padding:0rem 0rem 0rem 0rem;
+  align-items: flex-start;
+  }
+  .img-fin-1{
+   box-sizing: border-box;
+  }
+  .img-fin-a{
+    margin:0rem 0rem 0rem 0rem;
+    padding:2rem 0.8rem 2rem 0.8rem;
+    max-width: 100%;
   }
   
+
   h4{
     margin:0rem 0rem 0rem 0rem;
-    padding:2rem 0rem 2rem 0rem
+    padding:2rem 0rem 2rem 0rem;
+    font-size: x-large;
   }
   
  img {
@@ -238,7 +249,7 @@ h3,h2,h4{
 
 /*FOOTER*/
 .footer{
-  background-color: black;    
+  background-color: rgb(0, 0, 0);    
   height: 8rem;
   display: flex;
   align-items: center;
