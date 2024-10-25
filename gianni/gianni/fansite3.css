@@ -1,26 +1,41 @@
+
+.concert-one-regular {
+    font-family: "Concert One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.prompt-regular {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.prompt-light {
+    font-family: "Prompt", serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 .container{
     display:flex;
     justify-content: space-around;
     flex-wrap: wrap;
-     height: 50rem;
-     margin:0 auto;
+     /* height: 50rem; */
+     margin:2rem auto;
      
     }
     .item{
         width:18.75rem ;
-        height: 18.438rem; 
-        background-color: cadetblue;
     }
     .item1 {
         width: 18.75rem;
-        height: 18.438rem;
         
     }
 
 .container1{
     display: flex;
     justify-content: space-around;
-    height:81rem;
+    height:40rem;
     flex-wrap: wrap;
 }
 .centre{
@@ -50,12 +65,16 @@ html, body {
 img {
     max-width: 100%;
 }
+.boite{
+    width:100% ;
+}
 .slider-container {
     max-width: 50rem;
     position: relative;
     margin: auto;
     height: 21.875rem;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 .menu {
     position: absolute;
@@ -96,6 +115,9 @@ img {
 }
 body{
     background-color: black;
+    font-family: "Prompt";
+    font-size: 1.3rem;
+    
 }
 p,h1,h2,h3{
     color: white;
@@ -165,6 +187,32 @@ margin-top: 15.625rem;
 }
 
     
+.footer{
+    background-color:black;    
+    height: 8rem;
+    display: flex;
+    align-items: center;
+}
+
+.reseaux{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 20%;
+    margin-left: 5%;
+}
+
+.reseaux img:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease;
+}
+
+.reseaux img{
+    width: 70%;
+    
+
+
+}
 @media all and (max-width:767px){
 
     
