@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
  
 body {
@@ -9,6 +10,67 @@ body {
   width: 100%;
   height: auto;
 }
+
+nav{
+  position: fixed;
+  top:0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1.5rem;
+  height: 8rem;
+  background: rgb(34,116,195);
+  background: linear-gradient(0deg, rgba(34,116,195,1) 0%, rgba(0,5,5,1) 100%);
+  z-index: 1000;
+}
+
+
+nav a{
+  display: block;
+  text-align: center;
+  width: 400px;
+  height: 8rem;
+  padding-top: 25px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 1rem;
+  font-family: "Concert One";
+}
+
+nav a:hover{
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.logo{
+  background-image: url("/images/logo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 5rem;
+  width: 5rem;
+  display: inline-block;
+  margin: -1.2rem;
+  border-radius: 100%;
+  filter: drop-shadow(0 0 0.75rem rgb(212, 199, 201));    
+}
+
+#ch{
+  display: none;
+}
+
+#lab{
+  width: 30px ;
+  height: 30px;
+  background:linear-gradient(rgb(2, 169, 246) 0%,rgb(2, 169, 246) 20%,transparent 21%, transparent 40%,rgb(2, 169, 246) 41%, rgb(2, 169, 246) 60%, transparent 61%, transparent 80%, rgb(2, 169, 246) 81%, rgb(2, 169, 246) 100% );
+  border-radius: 5px;
+  margin: 4px;
+  display: block;
+  display: none;
+}
+
 
 .bodi{
   text-align: center;
@@ -26,7 +88,6 @@ font-weight: bold;
 
 .sectp{
 display:flex;
-
 margin: 0rem 0rem 0rem 0rem;
 background-size:100%;
 background-image: url(image\ thomas/imagetrackmania.webp);
@@ -174,6 +235,33 @@ h3,h2,h4{
     z-index: 100;
     transition: left 0.65s ease-out;
   }
+
+/*FOOTER*/
+.footer{
+  background-color: black;    
+  height: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.reseaux{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 20%;
+  margin-left: 5%;
+}
+
+.reseaux img:hover{
+  transform: scale(1.2);
+  transition: all 0.2s ease;
+}
+
+.reseaux img{
+  width: 70%;
+}
+
+/*FIN FOOTER*/
 
 
 
