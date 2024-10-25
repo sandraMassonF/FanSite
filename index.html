@@ -4,30 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Santhogian</title>
 </head>
 <body>
+    
     <header>
-        <nav>
-            <a href=""><img src="/images/logo.jpg" alt="logo santhogian"></a>
-            <a href=""></a>
-            <a href="/page2.html">TES V :Skyrim</a>
+        <label for="ch" id="lab"></label>
+        <input type="checkbox" id="ch"></input>
+        <nav>            
+            <a href="/index.html"><div class="logo"></div></a>
+            <a href="./thomas/fansite1.html">TrackMania</a>
+            <a href="./sandra/fansite2.html">TES V: Skyrim</a>
+            <a href="./gianni/gianni/fansite3.html">Rust</a>
+            <a href="./contact.html">Contact</a>
         </nav>
     </header>
 
-    <section>
-        <article class="card track"></article>
-
-        <article class="card skyrim"></article>
-
-        <article class="card rust"></article>
+    <section class="intro">
+        <h1><img src="./images/logo2.jpg" alt="santhogian"></h1><h2> FanSite multi-univers de jeux vidéos</h2>
     </section>
 
-    <footer>
-        <a href=""><img src="/images/twitch.png" alt="twitch"></a>
-        <a href=""><img src="/images/twitter.png" alt="twitter"></a>
-        <a href=""><img src="/images/instagram.png" alt="instagram"></a>
-        <a href=""><img src="/images/youtube.png" alt="youtube"></a>
+    <section class="section">
+
+        <article class="card track">
+            <div class="img-card"><a href="./thomas/fansite1.html"><img src="./images/trackmania.webp" alt="image trackmania" width="20%"></a></div>
+            <div class="text">
+                <h2 class="titreh2">TrackMania</h2>
+                <p>Ressentez l'adrénaline de la course et la joie de la création avec Trackmania ! Choisissez parmi trois niveaux d'accès pour découvrir tout ce que propose le jeu et plongez dans ce remake éblouissant du légendaire Trackmania Nations. <br>
+                Trackmania, c'est d'un côté une jouabilité facile à prendre en main mais difficile à maîtriser, et de l'autre un vaste choix de pistes et de customisations de skins, plus des saisons et des événements live réguliers.</p>
+            </div>
+        </article>
+
+
+        <article class="card skyrim">
+            <div class="text">
+                <h2 class="titreh2">The Elder Scroll V : Skyrim</h2>
+                <p> RPG coopératif qui vous emmènera dans les lieux les plus emblématiques de Bordeciel. Serez-vous Haut-Elfe, Orque, Khajiit, Elfe Noir, Nordique ou Impérial? Améliorez votre niveau au fil de la partie avec une large gamme d'armes et de sorts, et voyagez à travers les neufs Châtelleries de Bordeciel au fil des quêtes que vous accomplirez. <br>
+
+                De Blancherive à Fortdhiver, explorez et planifiez votre stratégie et vos prochains déplacements. Frayez-vous un chemin à travers des mines oubliées, plongez dans des ruines et tombeaux infestés de draugr, explorez d'anciennes cités Dwemer... <br>
+                    
+                Dernier des Dovahkiin, vous aurez pour mission de sauver bordeciel de la destruction causées par les dragons. <br>
+                    
+                Faites vos choix avec discernement pour accomplir votre destinée et protéger Bordeciel... Vivrez-vous cependant assez longtemps pour pouvoir raconter à vos descendants les exploits du temps où vous étiez un aventurier ?</p>
+            </div>
+            <div class="img-card"><a href="./sandra/fansite2.html"><img src="./images/skyrim2.png" alt="image skyrim" width="20%"></a></div>
+        </article>
+
+        <article class="card rust">
+            <div class="img-card"><a href="./gianni/gianni/fansite3.html"><img src="/images/rust.jpg" alt="image rust" width="20%"></a></div>
+            <div class="text">
+                <h2 class="titreh2">Rust</h2>
+                <p>Rust est un jeu de survie en monde ouvert qui se déroule dans un environnement impitoyable. <br>
+                Le but principal est de survivre dans un monde sauvage, où les dangers viennent non seulement des créatures et de la nature, mais aussi des autres joueurs. <br>                    
+                Pour rester en vie, il faut collecter des ressources, construire des abris, fabriquer des armes et se défendre contre les menaces environnantes. <br>                    
+                La particularité de Rust réside dans son côté multijoueur, où l'interaction avec les autres joueurs peut mener à des alliances temporaires ou à des affrontements violents. <br>                    
+                Le jeu exige donc à la fois de la stratégie, de la méfiance et de l'adaptation dans un environnement où la mort est souvent proche.
+                </p>
+            </div>            
+        </article>
+
+    </section>
+
+    <footer class="footer">
+        <div class="reseaux">
+            <div><a href="https://www.youtube.com/" target="_blank"><img src="/images/youtube2.png" alt="youtube"></a></div>
+            <div><a href="https://www.instagram.com/" target="_blank"><img src="/images/instagram.png" alt="instagram"></a></div>
+            <div><a href="https://www.twitch.tv/" target="_blank"><img src="/images/twitch.png" alt="twitch"></a></div>
+            <div><a href="https://x.com/?lang=fr" target="_blank"><img src="/images/twitter.png" alt="twitter"></a></div>
+            
+        </div>
     </footer>
 
 
